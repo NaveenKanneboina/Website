@@ -41,13 +41,18 @@ body {
     }
 }
 
+.nav-item{
+  color: #fff !important;
+  font-size: large;
+}
+
 @media (min-width: 992px) {
   body {
       padding-top: 0;
       padding-left: 17rem;
     }
   #sideNav {
-      text-align: center;
+      /* text-align: center; */
       position: fixed;
       top: 0;
       left: 0;
@@ -55,6 +60,7 @@ body {
       flex-direction: column;
       width: 17rem;
       height: 100vh;
+      background: #040b14 !important;
   }
   #sideNav .navbar-brand {
       display: flex;
