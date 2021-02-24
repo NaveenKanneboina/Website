@@ -26,9 +26,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav flex-column links">
-            <a class="nav-item nav-link " href="#"><i class="fa fa-home" style="margin-right: 20px; color: #007bff"></i>Home</a>
-            <a class="nav-item nav-link" href="#"><i class="fas fa-user" style="margin-right: 20px; color: #007bff"></i>About</a>
-            <a class="nav-item nav-link" href="#"><i class="far fa-file" style="margin-right: 20px; color: #007bff "></i>Resume</a>
+            <a class="nav-item nav-link " href="#home"><i class="fa fa-home" style="margin-right: 20px; color: #007bff"></i>Home</a>
+            <a class="nav-item nav-link" href="#about"><i class="fas fa-user" style="margin-right: 20px; color: #007bff"></i>About</a>
+            <a class="nav-item nav-link" href="#resume"><i class="far fa-file" style="margin-right: 20px; color: #007bff "></i>Resume</a>
             <!-- <a class="nav-item nav-link" href="#">Portfolio</a>
             <a class="nav-item nav-link" href="#">Contact</a> -->
           </div>
@@ -39,12 +39,13 @@
     </nav>
     <div class="container-fluid p-0">
         <!-- About-->
-        <section class="resume-section" id="about">
+        <section class="resume-section" id="home">
             <div class="resume-section-content">
                 <h1 class="mb-0">
                     Naveen
                     <span class="text-primary">Nani</span>
                 </h1>
+                <h1>I'm <span class="type"></span></h1>
                 <div class="subheading mb-5">
                     Sri Krishna Nagar, Old City, Nalgonda 508001 · (+ 91) 897-837-3134 ·
                     <a href="mailto:naveenkanneboina1303@gmail.com">Myname@email.com</a>
@@ -65,6 +66,18 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+    <script src="smooth-scroll.js"></script>
+    <script src="typed.js"></script>
+    <script>
+        var typed = new Typed('.type', {
+            strings: ["Web Developer"],
+            typeSpeed: 60,
+            backSpeed:60,
+            loop: true
+        });
+    </script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
   </body>
 </html>
