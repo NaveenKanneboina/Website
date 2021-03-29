@@ -80,3 +80,10 @@ h1 span{
   margin-bottom: auto;
 }
 }
+
+@media (max-width: 576px) {
+  .resumeImg {
+    width: 300px;
+    object-fit: contain;
+  }
+ }
